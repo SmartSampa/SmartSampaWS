@@ -13,11 +13,15 @@ import com.smartsampa.busapi.Trip;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import java.io.IOException;
 
 /**
  * Created by ruan0408 on 9/04/2016.
  */
+@RestController
 @SpringBootApplication
 public class Application {
 
@@ -28,6 +32,11 @@ public class Application {
         BusAPI.setSptransPassword("costaruan");
         BusAPI.setOlhovivoKey("3de5ce998806e0c0750b1434e17454b6490ccf0a595f3884795da34460a7e7b3");
         BusAPI.initialize();
+    }
+
+    @RequestMapping("/")
+    public String home() {
+        return "Welcome to Smart Sampa";
     }
 
     @Bean
