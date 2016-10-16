@@ -49,7 +49,7 @@
 		</repository>
 		<repository>
 			<id>project.local</id>
-			<name>smartsampalib</name>
+			<name>project</name>
 			<url>file:${project.basedir}/repo</url>
 		</repository>
 	</repositories>
