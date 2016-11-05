@@ -60,4 +60,4 @@ fabric.properties
 .idea/
 target/
 *.DS_Store
-gs-rest-service.iml
+SmartSampaWS.iml
